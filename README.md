@@ -1,6 +1,6 @@
 # Python API Automation Framework
 
-Hybrid Cusomter API Automation Framework include the proper folder structure
+Hybrid Custom API Automation Framework includes the proper folder structure
 
 ![Screenshot 2024-08-05 at 08 18 38](https://github.com/user-attachments/assets/3c7d5fe5-207a-42e7-84fe-f4d53354d987)
 
