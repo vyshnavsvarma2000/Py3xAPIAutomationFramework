@@ -21,7 +21,6 @@ def create_token():
     verify_json_key_for_not_null_token(response.json()["token"])
     return response.json()["token"]
 
-
 @pytest.fixture(scope="session")
 def get_booking_id():
     response = post_request(url=APIConstants().url_create_booking(),
