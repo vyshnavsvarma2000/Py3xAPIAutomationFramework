@@ -1,36 +1,62 @@
 # Python API Automation Framework
 
-Hybrid Custom API Automation Framework includes the proper folder structure
+Hybrid Custom Framework to Test the REST APIs
 
-![Screenshot 2024-08-05 at 08 18 38](https://github.com/user-attachments/assets/3c7d5fe5-207a-42e7-84fe-f4d53354d987)
-
-### Tech Stack
-- Python 3.12
-- Requests - HTTP Requests
-- PyTest - Testing Framework
-- Reporting - Allure Report, PyTest HTML
-- Test Data - CSV, Excel, JSON,  Faker
-- Advance API Testcase - jsonschema
-- Parallel Execution - x distribute (xdist)
-
-### Allure Report
-
-![Screenshot 2024-08-05 at 08 19 43](https://github.com/user-attachments/assets/da1ee5e1-81ef-4317-a0ba-d5788d779657)
+![Screenshot 2023-12-08 at 8 20 27 AM](https://github.com/PramodDutta/Py1xAPIAutomation/assets/1409610/a09647ad-720b-4afb-8d33-b69e4710cee4)
 
 
-### How to Install Packages
 
-``` pip install requests pytest pytest-html faker allure-pytest jsonschema```
+## Tech Stack
+1. Python 3.11
+2. Requests - HTTP Requests
+3. PyTest - Testing Framework
+4. Reporting - Allure Report, PyTest HTML
+5. Test Data - CSV, Excel, JSON
+6. Parallel Execution - x distribute
 
-### How to run your Testcase Parallel
 
-```pip install pytest-xdist```
 
-### How to add the .gitignore File?
+## How to Install Packages
+`` pip install requests pytest pytest-html faker allure-pytest jsonschema
+``
 
-Copy the content from this to .gitignore file
-https://www.toptal.com/developers/gitignore/api/pycharm+all
+## To Freeze your Package version
+`` pip freeze > requirements.txt ``
 
-### How to run the Basic Test with Allure report
+## To Install te Freeze Version
+``pip install -r requirements.txt``
 
-``` pytest tests/tests/crud/test_create_booking.py  --alluredir=allure_result -s```
+
+## How to run your Testcase Parallel 
+`` pip install pytest-xdist ``
+
+
+``pytest -n auto tests/integration_test/test_create_booking.py -s -v
+``
+
+## To Work with the Excel
+``pip install openpyxl``
+
+
+## To work wit JSON Schema
+```pip install jsonschema```
+
+
+
+
+
+# How to run via Jenkins(CI/CD)
+
+  ![Screenshot 2024-04-08 at 7 55 21 AM](https://github.com/PramodDutta/Py2xAPIAutomationFramework/assets/1409610/f6901407-910b-4ea2-a329-0a4433f7e240)
+
+- Jenkins Run Process
+- Install the Jenkins - jenkins dowload
+- Install the JDK  (open JDK)
+- https://jdk.java.net/21/
+- Set it into the Global Config - http://localhost:8080/manage/configureTools/
+- Install the Plugins - http://localhost:8080/manage/pluginManager/
+  - Allure
+- HTML Report
+- GITHUB - Repo - https://github.com/PramodDutta/Py2xAPIAutomationFramework.git
+
+ 
