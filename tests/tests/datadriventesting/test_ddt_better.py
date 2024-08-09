@@ -30,7 +30,7 @@ def create_auth_request(username, password):
         "password": password
     }
     response = post_request(
-        url=APIConstants.url_create_token(),
+        url=APIConstants().url_create_token(),
         headers=Utils().common_headers_json(),
         auth=None,
         payload=payload,
@@ -39,7 +39,7 @@ def create_auth_request(username, password):
     return response
 
 
-@pytest.mark.parametrize("user_cred", read_credentials_from_excel())
+@pytest.mark.parametrize("user_cred", read_credentials_from_excel("tests/tests/datadriventesting/testdata.xlsx"))
 def test_create_auth_with_excel(user_cred):
     username = user_cred["username"]
     password = user_cred["password"]
